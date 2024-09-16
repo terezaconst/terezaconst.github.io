@@ -21,7 +21,7 @@ repository               : "terezaconst/terezaconst.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "photo_for_ID.jpeg"
   name             : "Tereza Constantinou"
   pronouns         : # example: "she/her"  
   bio              : "3rd year PhD Student at the Institute of Astronomy, University of Cambridge"
