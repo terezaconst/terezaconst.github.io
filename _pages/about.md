@@ -13,19 +13,21 @@ I grew up in Nicosia, Cyprus. After finishing high school, I moved to Cambridge,
 
 Research Interests
 ======
-#### Planetary Science, Habitability, and Astrobiology:
+### Planetary Science, Habitability, and Astrobiology:
 Atmospheres, Interiors, and processes tying in the 2. Using our limited observations of exoplanets or celestial bodies in our solar system, how much information can we extract on their geologichemstry? Critically, how could we distinguish between abiotic and biotic processes?
 
 
 Research Groups
 ======
 [Planetary Chemistry:](https://www.shorttle.com/)
-"plan_chem.jpg"
+<img src='/images/plan_chem.jpg'>
 We study the evolution and habitability of planets in the solar system and around other stars.
 
 [Planetary Astrochemistry Lab:](https://people.phy.cam.ac.uk/pbr27/index.html)
+<img src='/images/plan_astro.jpg'>
 We experimentally simulate planetary environments and use them to test prebiotic chemistry.
 
 
 [Leverhulme Centre for Life in the Universe:](https://www.lclu.cam.ac.uk/)
+<img src='/images/lclu.jpg'>
 We aim to develop a deeper understanding of life, its emergence, and its distribution in the Universe.
