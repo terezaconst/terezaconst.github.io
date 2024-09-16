@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Tereza Constantinou"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD Student in Planetary Science & Astrobiology"
   location         : "Cambridge, UK"
-  employer         : "Institute of Astronomy, University of Cambridge"
+  employer         : "Institute of Astronomy,<br> University of Cambridge"
   uri              : # URL
   email            : "tc496@cam.ac.uk" 
 
@@ -34,7 +34,6 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=pLtFIXAAAAAJ&hl=en&oi=ao"
   orcid            : "https://orcid.org/0000-0002-2129-1340"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
 
 
   # Repositories and software development
