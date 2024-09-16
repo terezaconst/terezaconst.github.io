@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 I am currently an STFC-funded PhD student at the Institute of Astronomy, University of Cambridge.
-I grew up in Nicosia, Cyprus. After finishing high school, I moved to Cambridge, UK where I studied Physical Natural Sciences (BA/MA) and Astrophysics (MSci) at Trinity College. I then took 2 years of: partly working remotely (ML Lead in a startup; for more info see my LinkedIn), and partly travelling (wherever covid allowed; for more info see below or ask!)
+I grew up in Nicosia, Cyprus. After finishing high school, I moved to Cambridge, UK where I studied Physical Natural Sciences (BA/MA) and Astrophysics (MSci) at Trinity College. I then took 2 years of: partly working remotely (ML Lead in a startup; for more info see my LinkedIn), and partly travelling (wherever covid allowed; for more info see non-research or ask!)
 
 
 Research Interests
