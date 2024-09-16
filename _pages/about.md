@@ -14,7 +14,8 @@ I grew up in Nicosia, Cyprus. After finishing high school, I moved to Cambridge,
 Research Interests
 ======
 Planetary Science, Habitability, and Astrobiology:
-Atmospheres, Interiors, and processes tying in the 2. Using our limited observations of exoplanets or celestial bodies in our solar system, how much information can we extract on their geologichemstry? Critically, how could we distinguish between abiot and biotic processes?
+------
+Atmospheres, Interiors, and processes tying in the 2. Using our limited observations of exoplanets or celestial bodies in our solar system, how much information can we extract on their geologichemstry? Critically, how could we distinguish between abiotic and biotic processes?
 
 
 Research Groups
