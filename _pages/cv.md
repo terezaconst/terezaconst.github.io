@@ -28,7 +28,7 @@ for more info, see [my LinkedIn](https://www.linkedin.com/in/terezaconst/)
 
 * R&D Intern @ Procter & Gamble, 07-09/2018
 
-* Geophysics  Researcher @ Institute for Energy and Environmental Flows, University of Cambridge, 06-07/2017
+* Geophysics Researcher @ Institute for Energy and Environmental Flows, University of Cambridge, 06-07/2017
 
   
 Tech Skills
@@ -65,3 +65,4 @@ Languages
 ======
 English and Greek (native), French (professional)
 
+Complete CV is available on reasonable request.
