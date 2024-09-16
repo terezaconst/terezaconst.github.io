@@ -20,14 +20,23 @@ Atmospheres, Interiors, and processes tying in the 2. Using our limited observat
 Research Groups
 ======
 [Planetary Chemistry:](https://www.shorttle.com/)
-<img src='/images/plan_astro.jpg'>
+<img src='/images/plan_astro.jpg'
+  img {
+  width: 20%;
+  height: auto;}>
 We study the evolution and habitability of planets in the solar system and around other stars.
 
 [Planetary Astrochemistry Lab:](https://people.phy.cam.ac.uk/pbr27/index.html)
-<img src='/images/plan_chem.jpg'>
+<img src='/images/plan_chem.jpg'
+  img {
+  width: 20%;
+  height: auto;}>
 We experimentally simulate planetary environments and use them to test prebiotic chemistry.
 
 
 [Leverhulme Centre for Life in the Universe:](https://www.lclu.cam.ac.uk/)
-<img src='/images/lclu.jpg'>
+<img src='/images/lclu.jpg'
+  img {
+  width: 20%;
+  height: auto;}>
 We aim to develop a deeper understanding of life, its emergence, and its distribution in the Universe.
