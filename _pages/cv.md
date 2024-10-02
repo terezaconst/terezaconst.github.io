@@ -22,9 +22,9 @@ for more info, see [my LinkedIn](https://www.linkedin.com/in/terezaconst/)
 
 * Lead AI/ML Engineer @ DocMe Technologies (healthtech startup), 01-10/2021
 
-* Software Engineer @ Diverium (tech startup), 01-12/2020
+* Software Engineer @ Diverium (tech startup), 09-12/2020
 
-* Project Worker @ Education Partnerships Africa, Kenya 07-09/2019
+* Project Worker @ Education Partnerships Africa, Kenya, 07-09/2019
 
 * R&D Intern @ Procter & Gamble, 07-09/2018
 
@@ -49,8 +49,8 @@ see [talks page](https://terezaconst.github.io/talks/)
 
 Teaching
 ======
-* Planetary Science and Life in the Universe Masters [(PSLU)](https://www.pslu.masters.cam.ac.uk/)
-  * ‘Reading Group’ supervisor
+* ‘Reading Group’ supervisor for the Planetary Science and Life in the Universe Masters [(PSLU)](https://www.pslu.masters.cam.ac.uk/)
+* Supervised a summer intern on the formation and composition of Mercury (2023)
 * Private tutor for physics, maths, and Oxbridge interview prep (2020-present)
   
   
