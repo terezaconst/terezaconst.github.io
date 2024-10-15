@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "About me<span class="wave">👋</span>"
 author_profile: true
 redirect_from: 
   - /about/
