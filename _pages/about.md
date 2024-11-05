@@ -14,8 +14,9 @@ I grew up in Nicosia, Cyprus. After finishing high school, I moved to the UK whe
 
 Research Interests
 ======
-Using our limited observations of exoplanets or celestial bodies in our solar system, how much information can we extract about their geochemistry and possible habitability? Critically, how could we distinguish between abiotic and biotic processes? By modelling the planetary processes that shape these environments, such as atmospheres and surface-atmosphere interactions, I am working to elucidate the conditions on planets that allow life to emerge and be sustained.
- 
+Through modelling the processes that shape planets, such as atmospheric chemistry, volcanism, and weathering, I explore some key questions: <br>
+- Using our limited observations of exoplanets or celestial bodies in our solar system, how much information can we extract about their geochemistry and possible habitability? <br>
+- Critically, how could we distinguish between abiotic and biotic processes on distant worlds? 
 
 Research Groups
 ======
