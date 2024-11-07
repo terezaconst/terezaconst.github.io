@@ -18,7 +18,7 @@ Education
 Awards
 ======
 * Murdin Prize, best published paper produced by a Ph.D. student (2024)
-* Institute of Astronomy Project Prize, Best Master's Project (2020)
+* Institute of Astronomy Project Prize, best master's project (2020)
 
 Work experience
 ======
