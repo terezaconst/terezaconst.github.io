@@ -17,7 +17,7 @@ Education
 
 Awards
 ======
-* Murdin Prize, best published paper produced by a Ph.D. student (2024)
+*[Murdin Prize](https://www.ast.cam.ac.uk/current-students/postgraduate/your-phd/murdin-prize), best published paper produced by a Ph.D. student (2024)
 * Institute of Astronomy Project Prize, best master's project (2020)
 
 Work experience
