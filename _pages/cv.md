@@ -20,7 +20,29 @@ Awards
 * [Murdin Prize](https://www.ast.cam.ac.uk/current-students/postgraduate/your-phd/murdin-prize), best published paper produced by a Ph.D. student (2024)
 * Institute of Astronomy Project Prize, best master's project (2020)
 
-Work experience
+Teaching
+======
+* Part II [{'Topics in Astrophysics')](https://www.ast.cam.ac.uk/current-students/undergraduate/part-ii/teaching-and-learning/lent-term-courses) Supervisor 
+* ‘Reading Group’ supervisor for the Planetary Science and Life in the Universe Masters [(PSLU)](https://www.pslu.masters.cam.ac.uk/)
+* Supervised a summer intern on the formation and composition of Mercury (2023)
+* Private tutor for physics, maths, and Oxbridge interview prep (2020-present)
+
+Tech Skills
+======
+* Python, LaTeX, Git, Jupyter (strong)
+* Matlab, C++, HTML (intermediate)
+  
+  
+Service and leadership
+======
+* Reviewed 1 research paper, 1 book proposal
+* Wellbeing Advocate, Institute of Astronomy (2022-present)
+* Exoplanet Journal Club Organiser, Cambridge (2022-present)
+* International Women's Day Co-Organiser, Institute of Astronomy (2022-present)
+* Student Representative, Cavendish Laboratory & Institute of Astronomy (throughout undergrad, masters & PhD)
+
+  
+Other Work experience
 ======
 for more info, see [my LinkedIn](https://www.linkedin.com/in/terezaconst/)
 
@@ -36,6 +58,16 @@ for more info, see [my LinkedIn](https://www.linkedin.com/in/terezaconst/)
 * Geophysics Researcher @ Institute for Energy and Environmental Flows, University of Cambridge, 06-07/2017
   
 
+Languages
+======
+English and Greek (native), French (intermediate)
+
+Licenses
+======
+* EU Driving License
+* Open Water Diver
+* Working towards: `Solo' BGA Gliding Certificate, Small Boat/Zodiacs License
+
 Publications
 ======
 see [publications page](https://terezaconst.github.io/publications/)
@@ -43,34 +75,5 @@ see [publications page](https://terezaconst.github.io/publications/)
 Talks
 ======
 see [talks page](https://terezaconst.github.io/talks/)
-
-Teaching
-======
-* ‘Reading Group’ supervisor for the Planetary Science and Life in the Universe Masters [(PSLU)](https://www.pslu.masters.cam.ac.uk/)
-* Supervised a summer intern on the formation and composition of Mercury (2023)
-* Private tutor for physics, maths, and Oxbridge interview prep (2020-present)
-
-Tech Skills
-======
-* Python, LaTeX, Git, Jupyter (strong)
-* Matlab, C++, HTML (intermediate)
-  
-  
-Service and leadership
-======
-* Wellbeing Advocate, Institute of Astronomy (2022-present)
-* Exoplanet Journal Club Organiser, Cambridge (2022-present)
-* International Women's Day Co-Organiser, Institute of Astronomy (2022-present)
-* Student Representative, Cavendish Laboratory & Institute of Astronomy (throughout undergrad, masters & PhD)
-
-Languages
-======
-English and Greek (native), French (professional)
-
-Licenses
-======
-* EU Driving License
-* Open Water Diver
-* Working towards: `Solo' BGA Gliding Certificate, Small Boat/Zodiacs License
 
 Complete CV is available on reasonable request.
