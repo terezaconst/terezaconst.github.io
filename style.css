@@ -1,47 +1,35 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: sans-serif;
-    background-color: #fffaf0; /* A warmer, creamy background */
+    /* Using Futura font with a fallback */
+    font-family: Futura, sans-serif;
+    /* Exact background color from image */
+    background-color: #F7F7FD;
     color: #333;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align to top */
+    align-items: flex-start;
     min-height: 100vh;
-    padding: 2em 0; /* Add padding top and bottom */
-    position: relative;
-    overflow-x: hidden;
-}
-
-/* Yellow background shape */
-.container::before {
-    content: '';
-    position: absolute;
-    top: -20vw;
-    left: -20vw;
-    width: 45vw;
-    height: 45vw;
-    background: #ffea00; /* Brighter yellow */
-    border-radius: 50%;
-    z-index: 0;
+    padding: 3em 0;
 }
 
 .main-content {
     background-color: white;
-    padding: 2em 3em;
-    border: 1px solid #e0cffc;
+    padding: 2em 3.5em;
+    /* Exact border color from image */
+    border: 1px solid #E5D9FF;
     width: 80%;
     max-width: 900px;
-    z-index: 1;
     position: relative;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
 .header h1 {
-    color: #6a0dad; /* A deep purple */
+    /* Exact title color from image */
+    color: #2D2AFF;
     font-size: 2.8em;
     margin-bottom: 0.5em;
     font-weight: bold;
@@ -49,7 +37,8 @@ body, html {
 
 /* Abstract and Profile Section */
 .abstract-section {
-    border-bottom: 2px solid #ffea00;
+    /* Exact yellow border color from image */
+    border-bottom: 2px solid #FFD700;
     padding-bottom: 1.5em;
 }
 
@@ -60,8 +49,8 @@ body, html {
 }
 
 .profile-sidebar {
-    flex-basis: 150px; /* Set a fixed base width */
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-basis: 150px;
+    flex-shrink: 0;
     text-align: center;
 }
 
@@ -82,29 +71,24 @@ body, html {
     margin: 0.5em 0;
 }
 
-.contact-info a {
-    text-decoration: none;
-    color: #0000ff;
-}
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
 .abstract {
-    border-top: 2px solid #ffea00;
+    /* Exact yellow border color from image */
+    border-top: 2px solid #FFD700;
     padding-top: 1em;
-    flex-grow: 1; /* Allow this section to grow */
+    flex-grow: 1;
 }
 
 /* General Section Styling */
 .text-section {
     margin-top: 2em;
     padding-bottom: 1.5em;
-    border-bottom: 2px solid #ffea00;
+    /* Exact yellow border color from image */
+    border-bottom: 2px solid #FFD700;
 }
 
 h2 {
-    color: #6a0dad;
+    /* Exact section header color from image */
+    color: #E000E0;
     font-size: 2em;
     margin-top: 0;
     margin-bottom: 0.8em;
@@ -124,13 +108,11 @@ h2 {
     margin-bottom: 0.8em;
 }
 
-strong, .text-section a {
-    color: #0000ff;
+/* Links and Bold Text */
+strong, a {
+    /* Exact link/bold color from image */
+    color: #2D2AFF;
     font-weight: bold;
-}
-
-a {
-    color: #0000ff;
     text-decoration: none;
 }
 
@@ -139,7 +121,7 @@ a:hover {
 }
 
 
-/* Two Column Layout for Publications */
+/* Two Column Layout for Publications & Talks */
 .two-column-layout {
     display: flex;
     gap: 2.5em;
@@ -168,13 +150,13 @@ a:hover {
 /* CV Button */
 .cv-button-container {
     margin: 2em 0;
-    border-bottom: 2px solid #ffea00;
+    border-bottom: 2px solid #FFD700;
     padding-bottom: 2em;
 }
 
 .cv-button {
     display: inline-block;
-    background-color: #ffea00;
+    background-color: #FFD700;
     padding: 0.5em 1em;
     border-radius: 8px;
     font-weight: bold;
@@ -183,7 +165,8 @@ a:hover {
     margin-right: 1em;
 }
 .cv-button:hover {
-    background-color: #e0d100;
+    background-color: #e6c300;
+    color: #000;
 }
 
 /* Image Gallery */
@@ -204,14 +187,14 @@ a:hover {
     height: 160px;
     object-fit: cover;
     border-radius: 15px;
-    border: 4px solid #0000ff;
+    border: 4px solid #2D2AFF; /* Exact blue border color */
 }
 
 .gallery-item .caption {
     margin-top: 0.8em;
     font-weight: bold;
     color: #333;
-    background-color: #e0cffc;
+    background-color: #E5D9FF; /* Exact purple background */
     padding: 0.4em;
     border-radius: 8px;
 }
@@ -220,7 +203,7 @@ a:hover {
 .footer-diamond {
     width: 30px;
     height: 30px;
-    background-color: #0000ff;
+    background-color: #2D2AFF; /* Exact blue color */
     transform: rotate(45deg);
     margin: 3em auto 1em;
 }
