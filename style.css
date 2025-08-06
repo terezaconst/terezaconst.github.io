@@ -1,0 +1,93 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    width: 50%;
+    height: 50%;
+    background: #ffdb00;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+.main-content {
+  background-color: white;
+  padding: 2em;
+  border: 2px solid #e0cffc;
+  width: 80%;
+  max-width: 900px;
+  z-index: 1;
+}
+
+.header h1 {
+  color: #0000ff;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.content-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-image {
+  margin-right: 2em;
+  text-align: center;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.contact-info {
+  margin-top: 1em;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 0.5em 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+.abstract {
+  border-top: 2px solid #ffd700;
+  padding-top: 1em;
+}
+
+.abstract h2 {
+  color: #a020f0;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.abstract p {
+  line-height: 1.6;
+}
+
+.abstract strong {
+    color: #0000ff;
+}
