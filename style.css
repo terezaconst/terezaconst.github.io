@@ -4,8 +4,8 @@ body, html {
     font-family: Futura, sans-serif;
     background-color: #F7F7FD;
     color: #333;
-    /* CHANGE: Slightly smaller base font size */
-    font-size: 95%;
+    /* CHANGE: Made base font size smaller */
+    font-size: 85%;
 }
 
 .container {
@@ -13,30 +13,33 @@ body, html {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 2.5em 0; /* CHANGE: Reduced vertical padding */
+    padding: 2.5em 0;
 }
 
 .main-content {
     background-color: white;
-    padding: 2em 3em; /* CHANGE: Reduced horizontal padding */
+    padding: 2em 3em;
     border: 1px solid #E5D9FF;
     width: 80%;
-    /* CHANGE: Reduced max-width to make the page smaller */
-    max-width: 850px;
+    /* CHANGE: Made the page smaller */
+    max-width: 780px;
     position: relative;
     box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
+.header {
+    /* CHANGE: Added more space below the header */
+    margin-bottom: 2.5em;
+}
+
 .header h1 {
     color: #2D2AFF;
-    font-size: 2.6em; /* CHANGE: Reduced font size */
-    margin-bottom: 0.5em;
-    font-weight: bold;
+    font-size: 2.6em;
+    font-weight: normal; /* CHANGE: Made title thinner */
 }
 
 /* Abstract and Profile Section */
 .abstract-section {
-    /* REMOVED: border-bottom property */
     padding-bottom: 1.5em;
 }
 
@@ -49,12 +52,14 @@ body, html {
 .profile-sidebar {
     flex-basis: 150px;
     flex-shrink: 0;
-    text-align: center;
+    /* CHANGE: Centered profile pic with text below */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-image {
     border-radius: 50%;
-    /* CHANGE: Reduced image size */
     width: 110px;
     height: 110px;
     object-fit: cover;
@@ -62,49 +67,52 @@ body, html {
 }
 
 .contact-info {
-    text-align: left;
-    font-size: 0.9em;
+    text-align: left; /* Aligns text within the block */
 }
 
 .contact-info p {
+    font-size: 1em;
     margin: 0.5em 0;
 }
 
 .abstract {
-    /* REMOVED: border-top property */
-    padding-top: 0; /* CHANGE: Adjusted padding after removing border */
     flex-grow: 1;
+    /* CHANGE: Added yellow lines only here */
+    border-top: 2px solid #f8c207;
+    border-bottom: 2px solid #f8c207;
+    padding: 1em 0;
 }
 
 /* General Section Styling */
 .text-section {
     margin-top: 2em;
     padding-bottom: 1.5em;
-    /* REMOVED: border-bottom property */
 }
 
 h2 {
-    color: #E000E0;
-    font-size: 1.8em; /* CHANGE: Reduced font size */
+    color: #9E0059;
+    font-size: 1.8em;
+    font-weight: normal; /* CHANGE: Made section titles thinner */
     margin-top: 0;
     margin-bottom: 0.8em;
 }
 
-.text-section p, .text-section ul, .abstract p {
-    line-height: 1.6; /* CHANGE: Slightly reduced line-height */
-    font-size: 1em; /* CHANGE: Reduced font size */
+/* CHANGE: Unified font size for all non-title text */
+p, li {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 .text-section ul {
     list-style-position: outside;
     padding-left: 20px;
+    margin-top: 1em;
 }
 
 .text-section ul li {
     margin-bottom: 0.8em;
 }
 
-/* Links and Bold Text */
 strong, a {
     color: #2D2AFF;
     font-weight: bold;
@@ -115,7 +123,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Two Column Layout for Publications & Talks */
+/* Two Column Layout */
+.two-column-layout .column p {
+    font-size: 1em; /* Ensure consistent font size */
+    margin-bottom: 1.5em;
+}
+
 .two-column-layout {
     display: flex;
     gap: 2.5em;
@@ -126,44 +139,35 @@ a:hover {
     min-width: 0;
 }
 
-.column p {
-    font-size: 0.85em; /* CHANGE: Reduced font size */
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 1.5em;
-}
-.column p a {
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 0.2em;
-}
-.talks-posters .column p {
-    margin-bottom: 1em;
-}
-
-/* CV Button */
+/* CV Button Styling */
 .cv-button-container {
     margin: 2em 0;
-     /* REMOVED: border-bottom property */
-    padding-bottom: 1em; /* CHANGE: Adjusted padding */
+    padding-bottom: 1em;
 }
 
 .cv-button {
-    display: inline-block;
-    background-color: #FFD700;
-    padding: 0.5em 1em;
-    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    /* CHANGE: Matched button style to image */
+    background-color: #f8c207;
+    color: #9E0059;
+    padding: 10px 25px;
+    border-radius: 50px;
     font-weight: bold;
-    color: #333;
+    font-size: 1.5em;
     text-decoration: none;
-    margin-right: 1em;
 }
 .cv-button:hover {
-    background-color: #e6c300;
-    color: #000;
+    background-color: #eab406;
+}
+.cv-button .file-icon {
+    width: 20px;
+    height: 24px;
+    fill: #9E0059;
 }
 
-/* Image Gallery */
+/* Image Gallery Styling */
 .image-gallery {
     display: flex;
     justify-content: space-around;
@@ -172,47 +176,42 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/* CHANGE: New gallery item style */
 .gallery-item {
+    background-color: white;
+    border: 2px solid #2D2AFF;
+    border-radius: 20px; /* Rounded corners for the whole item */
+    padding: 10px;
     text-align: center;
+    width: 200px; /* Fixed width for consistency */
+    display: flex;
+    flex-direction: column;
 }
 
 .gallery-item img {
-    /* CHANGE: Reduced image size */
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 160px;
     object-fit: cover;
-    border-radius: 15px;
-    border: 4px solid #2D2AFF;
+    border-radius: 12px; /* Rounded corners for the image inside */
+    border: none;
 }
 
 .gallery-item .caption {
-    margin-top: 0.8em;
+    background-color: transparent;
+    color: #2D2AFF;
     font-weight: bold;
-    color: #333;
-    background-color: #E5D9FF;
-    padding: 0.4em;
-    border-radius: 8px;
+    padding: 12px 5px 5px 5px;
+    font-size: 1.1em;
 }
 
-
-/* Remove bottom padding from the last section to avoid extra space */
-.main-content > .text-section:last-of-type {
-    padding-bottom: 0;
-}
-
-/* Responsive Design for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .content-flex, .two-column-layout {
+    .content-flex, .two-column-layout, .image-gallery {
         flex-direction: column;
+        align-items: center;
     }
     .main-content {
         padding: 1.5em;
         width: 90%;
     }
-    .header h1 {
-        font-size: 2.2em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-}```
+}
