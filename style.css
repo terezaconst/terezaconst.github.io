@@ -114,8 +114,13 @@ p, li, .gallery-item .caption {
     margin-bottom: 0.8em;
 }
 
-strong, a {
-    color: #333;
+strong {
+    font-weight: bold;
+}
+
+/* This rule makes links (<a>) bold AND blue, matching the h1 title */
+a {
+    color: #2D2AFF;
     font-weight: bold;
     text-decoration: none;
 }
@@ -181,7 +186,7 @@ a:hover {
 
 .gallery-item {
     background-color: white;
-    border: 2px solid #2D2AFF;
+    border: none;
     border-radius: 20px;
     padding: 10px;
     text-align: center;
