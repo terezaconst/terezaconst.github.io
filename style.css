@@ -34,7 +34,7 @@ body, html {
 .header h1 {
     color: #2D2AFF;
     font-size: 2.6em;
-    /* Your updated font weight */
+    /*  updated font weight */
     font-weight: bold;
 }
 
@@ -200,10 +200,9 @@ a:hover {
 
 .gallery-item .caption {
     background-color: transparent;
-    color: #2D2AFF;
-    font-weight: bold;
-    padding: 12px 5px 5px 5px;
-    /* REMOVED: Individual font-size to use the main rule above */
+    color: #333;
+    font-weight: normal;
+    padding: 10px 3px 3px 3px;
 }
 
 /* Responsive Design */
