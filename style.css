@@ -90,10 +90,10 @@ body, html {
 h2 {
     /* Your updated heading color and weight */
     color: #c400ff;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.5em;
 }
 
 /* ================================================ */
