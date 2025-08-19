@@ -118,15 +118,18 @@ strong {
     font-weight: bold;
 }
 
-/* This rule makes links (<a>) bold AND blue, matching the h1 title */
+/* This rule makes links inherit their color, removes the bold,
+   and adds a blue underline */
 a {
-    color: #2D2AFF;
-    font-weight: bold;
-    text-decoration: none;
+    color: inherit; /* This makes the link text the same color as the surrounding text */
+    font-weight: normal; /* This removes the bold styling */
+    text-decoration: underline;
+    text-decoration-color: #2D2AFF; /* This makes the underline blue */
 }
 
+/* This rule changes the text color to blue when you hover over it */
 a:hover {
-    text-decoration: underline;
+    color: #2D2AFF;
 }
 
 /* Two Column Layout */
