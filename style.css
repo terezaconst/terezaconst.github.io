@@ -1,10 +1,10 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Futura, sans-serif;
+    /* CHANGED: system serif font */
+    font-family: Times, "Times New Roman", serif;
     background-color: #F7F7FD;
     color: #333;
-    /* This sets the base font size for the entire document */
     font-size: 90%;
 }
 
@@ -19,7 +19,6 @@ body, html {
 .main-content {
     background-color: white;
     padding: 2em 3em;
-    /* Your updated border color */
     border: 1px solid #e590ff;
     width: 80%;
     max-width: 780px;
@@ -31,10 +30,10 @@ body, html {
     margin-bottom: 2.5em;
 }
 
+/* KEEP original heading styling */
 .header h1 {
     color: #2D2AFF;
     font-size: 2.6em;
-    /*  updated font weight */
     font-weight: bold;
 }
 
@@ -70,7 +69,6 @@ body, html {
 }
 
 .contact-info p {
-    /* REMOVED: Individual font-size to use the main rule below */
     margin: 0.5em 0;
 }
 
@@ -87,8 +85,8 @@ body, html {
     padding-bottom: 1.5em;
 }
 
+/* KEEP original subheading styling */
 h2 {
-    /* Your updated heading color and weight */
     color: #c400ff;
     font-size: 1.4em;
     font-weight: bold;
@@ -96,11 +94,9 @@ h2 {
     margin-bottom: 0.5em;
 }
 
-/* ================================================ */
-/* CHANGE: This one rule now controls all main text */
-/* ================================================ */
+/* Main text */
 p, li, .gallery-item .caption {
-    font-size: 1.1em; /* Adjust this single value to resize all text at once */
+    font-size: 1.1em;
     line-height: 1.6;
 }
 
@@ -118,26 +114,22 @@ strong {
     font-weight: bold;
 }
 
-/* This rule makes links inherit their color, removes the bold,
-   and adds a blue underline */
+/* CHANGED: classic macOS / Safari link styling */
 a {
-    color: inherit; /* This makes the link text the same color as the surrounding text */
-    font-weight: normal; /* This removes the bold styling */
+    color: #0000EE;
     text-decoration: underline;
-    text-decoration-color: #2D2AFF; /* This makes the underline blue */
+    font-weight: normal;
 }
 
-/* This rule changes the text color to blue when you hover over it */
+a:visited {
+    color: #551A8B;
+}
+
 a:hover {
-    color: #2D2AFF;
+    color: #0000EE;
 }
 
 /* Two Column Layout */
-.two-column-layout .column p {
-    /* REMOVED: Individual font-size to use the main rule above */
-    margin-bottom: 1.5em;
-}
-
 .two-column-layout {
     display: flex;
     gap: 2.5em;
@@ -148,7 +140,11 @@ a:hover {
     min-width: 0;
 }
 
-/* CV Button Styling */
+.two-column-layout .column p {
+    margin-bottom: 1.5em;
+}
+
+/* CV Button Styling  */
 .cv-button-container {
     margin: 2em 0;
     padding-bottom: 1em;
@@ -159,22 +155,21 @@ a:hover {
     align-items: center;
     gap: 10px;
     background-color: #f8c207;
-    /* Your updated button color */
     color: #c400ff;
     padding: 10px 25px;
     border-radius: 50px;
     font-weight: bold;
-    /* Note: CV Button font size is kept large intentionally */
     font-size: 1.5em;
     text-decoration: none;
 }
+
 .cv-button:hover {
     background-color: #eab406;
 }
+
 .cv-button .file-icon {
     width: 20px;
     height: 24px;
-    /* Your updated icon color */
     fill: #c400ff;
 }
 
@@ -213,12 +208,20 @@ a:hover {
     padding: 10px 3px 3px 3px;
 }
 
+/* Optional but accurate for ASCII / code */
+pre, code {
+    font-family: Menlo, monospace;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .content-flex, .two-column-layout, .image-gallery {
+    .content-flex,
+    .two-column-layout,
+    .image-gallery {
         flex-direction: column;
         align-items: center;
     }
+
     .main-content {
         padding: 1.5em;
         width: 90%;
