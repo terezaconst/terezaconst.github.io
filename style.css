@@ -1,12 +1,27 @@
 
+:root {
+    --bg-lavender: #f6f4fd;
+    --text-ink: #30313a;
+    --accent-blue: #2d37c7;
+    --accent-blue-hover: #2730a8;
+    --accent-magenta: #b84bcf;
+    --accent-magenta-deep: #8d3e79;
+    --accent-yellow: #efcd68;
+    --accent-yellow-hover: #e4c053;
+    --frame-lilac: #dcc6ef;
+    --frame-lilac-soft: #e8d8f4;
+}
+
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Futura, sans-serif;
-    background-color: #F7F7FD;
-    color: #333;
-    /* This sets the base font size for the entire document */
-    font-size: 90%;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: var(--bg-lavender);
+    color: var(--text-ink);
+    font-size: 100%;
+    line-height: 1.72;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -14,18 +29,17 @@ body, html {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 5em 0;
+    padding: 3.2em 1em;
 }
 
 .main-content {
     background-color: white;
-    padding: 2em 3em;
-    /* Your updated border color */
-    border: 1px solid #e590ff;
-    width: 80%;
-    max-width: 780px;
+    padding: 2.5em 3.1em;
+    border: 1px solid var(--frame-lilac);
+    width: 100%;
+    max-width: 800px;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 4px rgba(44, 32, 90, 0.06);
 }
 
 .header {
@@ -33,10 +47,13 @@ body, html {
 }
 
 .header h1 {
-    color: #2D2AFF;
-    font-size: 2.6em;
-    /*  updated font weight */
-    font-weight: bold;
+    color: var(--accent-blue);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.45em;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.005em;
+    margin: 0;
 }
 
 /* Abstract and Profile Section */
@@ -60,10 +77,11 @@ body, html {
 
 .profile-image {
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width: 116px;
+    height: 116px;
     object-fit: cover;
     margin-bottom: 1em;
+    border: 1px solid var(--frame-lilac-soft);
 }
 
 .contact-info {
@@ -71,38 +89,41 @@ body, html {
 }
 
 .contact-info p {
-    /* REMOVED: Individual font-size to use the main rule below */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.6;
     margin: 0.5em 0;
 }
 
 .abstract {
     flex-grow: 1;
-    border-top: 2px solid #f8c207;
-    border-bottom: 2px solid #f8c207;
-    padding: 1em 0;
+    padding: 1.1em 0;
 }
 
 /* General Section Styling */
 .text-section {
-    margin-top: 2em;
-    padding-bottom: 1.5em;
+    margin-top: 2.1em;
+    padding-top: 0;
+    border-top: 0;
 }
 
 h2 {
-    /* Your updated heading color and weight */
-    color: #c400ff;
-    font-size: 1.4em;
-    font-weight: bold;
+    color: var(--accent-magenta);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.03em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: none;
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 /* ================================================ */
 /* CHANGE: This one rule now controls all main text */
 /* ================================================ */
 p, li, .gallery-item .caption {
-    font-size: 1.1em; /* Adjust this single value to resize all text at once */
-    line-height: 1.6;
+    font-size: 1.02em;
+    line-height: 1.75;
 }
 
 .text-section ul {
@@ -119,29 +140,28 @@ strong {
     font-weight: bold;
 }
 
-/* This rule makes links inherit their color, removes the bold,
-   and adds a blue underline */
+/* Link styling */
 a {
-    color: inherit; /* This makes the link text the same color as the surrounding text */
-    font-weight: normal; /* This removes the bold styling */
+    color: var(--accent-blue);
+    font-weight: normal;
     text-decoration: underline;
-    text-decoration-color: #2D2AFF; /* This makes the underline blue */
+    text-decoration-color: var(--accent-blue);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
 }
 
-/* This rule changes the text color to blue when you hover over it */
 a:hover {
-    color: #2D2AFF;
+    color: var(--accent-blue-hover);
 }
 
 /* Two Column Layout */
 .two-column-layout .column p {
-    /* REMOVED: Individual font-size to use the main rule above */
-    margin-bottom: 1.5em;
+    margin-bottom: 1.15em;
 }
 
 .two-column-layout {
     display: flex;
-    gap: 2.5em;
+    gap: 2.2em;
 }
 
 .column {
@@ -149,34 +169,83 @@ a:hover {
     min-width: 0;
 }
 
-/* CV Button Styling */
-.cv-button-container {
-    margin: 2em 0;
-    padding-bottom: 1em;
+/* Publications */
+.publications-list {
+    display: block;
 }
 
-.cv-button {
+.publication-item {
+    position: static;
+    padding: 0;
+    margin: 0 0 0.9em;
+    background: none;
+    border: 0;
+    border-radius: 0;
+}
+
+.publication-title {
+    margin: 0;
+    color: inherit;
+    font-size: 1.01em;
+    font-weight: bold;
+    line-height: 1.42;
+}
+
+.publication-authors {
+    color: #393944;
+    font-size: 0.94em;
+    margin: 0.14em 0 0;
+    line-height: 1.5;
+}
+
+.publication-venue {
+    color: #5a5966;
+    font-size: 0.91em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0.08em 0 0;
+}
+
+.publication-link {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background-color: #f8c207;
-    /* Your updated button color */
-    color: #c400ff;
-    padding: 10px 25px;
-    border-radius: 50px;
-    font-weight: bold;
-    /* Note: CV Button font size is kept large intentionally */
-    font-size: 1.5em;
+    justify-content: center;
+    width: 0.78em;
+    height: 0.78em;
+    margin-left: 0.16em;
+    vertical-align: -0.04em;
     text-decoration: none;
+    border: 0;
+    color: var(--accent-blue);
+    line-height: 0;
 }
-.cv-button:hover {
-    background-color: #eab406;
+
+.publication-link-icon {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
-.cv-button .file-icon {
-    width: 20px;
-    height: 24px;
-    /* Your updated icon color */
-    fill: #c400ff;
+
+.publication-link:hover {
+    color: var(--accent-blue-hover);
+    transform: translateY(-0.5px);
+}
+
+.publication-note {
+    font-size: 0.9em;
+    margin: 0.14em 0 0;
+    color: #474754;
+}
+
+.publications-footer {
+    margin: 0.2em 0 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.89em;
+    color: #555562;
 }
 
 /* Image Gallery Styling */
@@ -188,9 +257,10 @@ a:hover {
 }
 
 .gallery-item {
-    background-color: white;
-    border-radius: 20px;
-    padding: 12px;
+    background-color: #fff;
+    border: 1px solid var(--frame-lilac-soft);
+    border-radius: 6px;
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -198,15 +268,37 @@ a:hover {
 
 .gallery-item img {
     width: 100%;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 4px;
 }
 
 .gallery-item .caption {
-    margin-top: 0.8em;
-    font-size: 1.05em;
-    line-height: 1.4;
+    margin-top: 0.65em;
+    font-size: 0.93em;
+    line-height: 1.55;
+}
+
+/* Talks and Posters */
+.talks-list {
+    margin: 0;
+    padding-left: 1.6em;
+    columns: 2;
+    column-gap: 2.1em;
+}
+
+.talks-list li {
+    break-inside: avoid;
+    margin-bottom: 0.8em;
+    line-height: 1.58;
+}
+
+.talk-role {
+    font-weight: 600;
+}
+
+.talk-meta {
+    color: #595a66;
 }
 
 /* Responsive Design */
@@ -214,15 +306,36 @@ a:hover {
     .content-flex,
     .two-column-layout {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        gap: 1.35em;
+    }
+
+    .profile-sidebar {
+        align-items: flex-start;
+        flex-basis: auto;
     }
 
     .image-gallery {
         grid-template-columns: 1fr; /* single column on mobile */
     }
 
+    .container {
+        padding: 1.2em 0.7em 2.2em;
+    }
+
     .main-content {
-        padding: 1.5em;
-        width: 90%;
+        padding: 1.4em 1.2em;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .publication-item {
+        margin-bottom: 0.8em;
+    }
+
+    .talks-list {
+        columns: 1;
     }
 }
