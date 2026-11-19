@@ -11,6 +11,8 @@
 </script>
 </html>
  -->
+ 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,16 +20,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tereza Constantinou</title>
-    <link rel="stylesheet" href="style.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X120GPNT1S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <style>
+:root {
+    --bg-lavender: #f6f4fd;
+    --text-ink: #30313a;
+    --accent-blue: #2d37c7;
+    --accent-blue-hover: #2730a8;
+    --accent-magenta: #b84bcf;
+    --accent-magenta-deep: #8d3e79;
+    --accent-yellow: #efcd68;
+    --accent-yellow-hover: #e4c053;
+    --frame-lilac: #dcc6ef;
+    --frame-lilac-soft: #e8d8f4;
+}
+body, html { height: 100%; margin: 0; font-family: Georgia, "Times New Roman", serif; background-color: var(--bg-lavender); color: var(--text-ink); font-size: 100%; line-height: 1.72; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+.container { display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; padding: 3.2em 1em; }
+.main-content { background-color: white; padding: 2.5em 3.1em; border: 1px solid var(--frame-lilac); width: 100%; max-width: 800px; position: relative; box-shadow: 0 1px 4px rgba(44, 32, 90, 0.06); }
+.header { margin-bottom: 2.5em; }
+.header h1 { color: var(--accent-blue); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 2.45em; font-weight: 700; line-height: 1.15; letter-spacing: -0.005em; margin: 0; }
+.abstract-section { padding-bottom: 1.5em; }
+.content-flex { display: flex; align-items: flex-start; gap: 2em; }
+.profile-sidebar { flex-basis: 150px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; }
+.profile-image { border-radius: 50%; width: 116px; height: 116px; object-fit: cover; margin-bottom: 0.35em; border: 1px solid var(--frame-lilac-soft); }
+.contact-info { text-align: left; }
+.contact-info p { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 0.9em; line-height: 1.6; margin: 0.5em 0; }
+.abstract { flex-grow: 1; max-width: 460px; padding: 1.1em 0; }
+.text-section { margin-top: 2.1em; padding-top: 0; border-top: 0; }
+h2 { color: var(--accent-magenta); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.03em; font-weight: 700; letter-spacing: 0.01em; text-transform: none; margin-top: 0; margin-bottom: 0.75em; }
+p, li, .gallery-item .caption { font-size: 1.02em; line-height: 1.75; }
+.text-section ul { list-style-position: outside; padding-left: 20px; margin-top: 1em; }
+.text-section ul li { margin-bottom: 0.8em; }
+strong { font-weight: bold; }
+a { color: var(--accent-blue); font-weight: normal; text-decoration: underline; text-decoration-color: var(--accent-blue); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--accent-blue-hover); }
+.two-column-layout .column p { margin-bottom: 1.15em; }
+.two-column-layout { display: flex; gap: 2.2em; }
+.column { flex: 1; min-width: 0; }
+.publications-list { display: block; }
+.publication-item { position: static; padding: 0; margin: 0 0 0.9em; background: none; border: 0; border-radius: 0; }
+.publication-title { margin: 0; color: inherit; font-size: 1.01em; font-weight: bold; line-height: 1.42; }
+.publication-authors { color: #393944; font-size: 0.94em; margin: 0.14em 0 0; line-height: 1.5; }
+.publication-venue { color: #5a5966; font-size: 0.91em; font-style: italic; font-weight: normal; margin: 0.08em 0 0; }
+.publication-link { display: inline-flex; align-items: center; justify-content: center; width: 0.78em; height: 0.78em; margin-left: 0.16em; vertical-align: -0.04em; text-decoration: none; border: 0; color: var(--accent-blue); line-height: 0; }
+.publication-link-icon { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2.3; stroke-linecap: round; stroke-linejoin: round; }
+.publication-link:hover { color: var(--accent-blue-hover); transform: translateY(-0.5px); }
+.publication-note { font-size: 0.9em; margin: 0.14em 0 0; color: #474754; }
+.publications-footer { margin: 0.2em 0 0; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 0.89em; color: #555562; }
+.image-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5em; margin-top: 2em; }
+.gallery-item { background-color: #fff; border: 1px solid var(--frame-lilac-soft); border-radius: 6px; padding: 10px; text-align: center; display: flex; flex-direction: column; }
+.gallery-item img { width: 100%; height: 190px; object-fit: cover; border-radius: 4px; }
+.gallery-item .caption { margin-top: 0.65em; font-size: 0.93em; line-height: 1.55; }
+.talks-list { margin: 0; padding-left: 1.6em; columns: 2; column-gap: 2.1em; }
+.talks-list li { break-inside: avoid; margin-bottom: 0.8em; line-height: 1.58; }
+.talk-role { font-weight: 600; }
+.talk-meta { color: #595a66; }
+@media (max-width: 768px) { .content-flex, .two-column-layout { flex-direction: column; align-items: stretch; gap: 1.35em; } .profile-sidebar { align-items: flex-start; flex-basis: auto; } .abstract { max-width: none; } .image-gallery { grid-template-columns: 1fr; } .container { padding: 1.2em 0.7em 2.2em; } .main-content { padding: 1.4em 1.2em; } .header h1 { font-size: 2em; } .publication-item { margin-bottom: 0.8em; } .talks-list { columns: 1; } }
+    </style>
 
-  gtag('config', 'G-X120GPNT1S');
-</script>
 </head>
 <body>
 
@@ -42,8 +91,7 @@
             <div class="profile-sidebar">
                 <img src="Figures/profile.png" alt="Tereza Constantinou" class="profile-image">
                 <div class="contact-info">
-                    <p> Cambridge, UK<br>
-                     <a href="https://scholar.google.com/citations?user=pLtFIXAAAAAJ&amp;hl=en">Google scholar</a><br>
+                     <a href="https://scholar.google.com/citations?user=pLtFIXAAAAAJ&amp;hl=en">Google Scholar</a><br>
                      <a href="https://orcid.org/0000-0002-2129-1340">ORCID</a><br>
                      <a href="https://www.linkedin.com/in/terezaconst/">LinkedIn</a><br>
                      <a href="mailto:tc496@cam.ac.uk">Email</a><br>
@@ -51,20 +99,17 @@
                 </div>
             </div>
             <div class="abstract">
-                <!-- This section was correctly formatted -->
                 <h2>Abstract</h2>
-                <p><p>I am a postdoctoral fellow in the biogeochemistry unit of the Department of Environmental Science, Stockholm University. I am working on modelling methane emissions from subsea permafrost on the Arctic Ocean shelves, under present and future conditions, as part of the <a href="https://www.su.se/english/research/research-projects/quantifying-methane-emissions-from-the-subsea-permafrost-tipping-system-supertip">SuPerTip project</a>. </p>
-                
+                <p>I am a postdoctoral fellow in the Biogeochemistry Unit of the Department of Environmental Science at Stockholm University. I model methane emissions from subsea permafrost on the Arctic Ocean shelves under present and future conditions as part of the <a href="https://www.su.se/english/research/research-projects/quantifying-methane-emissions-from-the-subsea-permafrost-tipping-system-supertip">SuPerTip</a> project.</p>
             </div>
         </div>
 
-     
- 
+
         <!-- Introduction Section -->
         <div class="text-section">
             <h2>Introduction</h2>
-            <p>I grew up in Nicosia, Cyprus. After high school, I moved to the UK where I studied Physical Natural Sciences (BA/MA) and Astrophysics (MSc) at Trinity College, University of Cambridge. I then took 2 years off before my PhD: partly working remotely (ML Lead in a startup; for more info see my LinkedIn), and partly travelling (wherever covid allowed; for more info see non-research or ask!)</p>
-            <p>I completed my PhD at Institute of Astronomy, University of Cambridge. My thesis, <a href="https://www.repository.cam.ac.uk/items/71149300-dff8-4657-acb2-f184c3afac9e">"Venus as a baseline in the search for life", reframed a central challenge in astrobiology: to find life, one must first be able to first define lifelessness. Life is recognisable as a deviation from abiotic expectation; a potentially biological anomaly. Venus is Earth's nearest planetary twin and is uninhabitable today, which makes Venus a natural control case. I studied Venus's atmosphere, volcanism, and weathering to deconstruct the planetary processes that have shaped the uninhabitable environment it hosts today. Comparing the divergence between the Earth and its hellish twin, this work culminated in a framework for how to search for life, and its absence, beyond our solar system. </p>
+            <p>I grew up in Nicosia, Cyprus, and moved to the UK after high school to study Physical Natural Sciences (BA/MA) and Astrophysics (MSc) at Trinity College, University of Cambridge. I then took two years out before my PhD, working remotely as an ML lead at a startup and travelling wherever COVID allowed (see the non-research section below).</p>
+            <p>I completed my PhD at the Institute of Astronomy, University of Cambridge. My thesis, <a href="https://www.repository.cam.ac.uk/items/71149300-dff8-4657-acb2-f184c3afac9e">Venus as a baseline in the search for life</a>, reframed a central challenge in astrobiology: to find life, we must first define lifelessness. Life may be recognisable as a deviation from abiotic expectations: a potentially biological anomaly. Venus is Earth's nearest planetary twin and is uninhabitable today, making it a natural control case. I studied Venus's atmosphere, volcanism, and weathering to understand the planetary processes that shaped its environment. This work culminated in a framework for searching for life—and its absence—beyond our Solar System. </p>
         </div>
 
         <!-- Publications Section -->
@@ -74,31 +119,28 @@
                 <article class="publication-item">
                     <h3 class="publication-title">Life as an anomaly against a systemic abiotic baseline</h3>
                     <p class="publication-authors"><strong>Constantinou, T.</strong></p>
-                    <p class="publication-venue">Nature Astronomy, in press. <a class="publication-link" href="  target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
+                    <p class="publication-venue">Nature Astronomy, in press.</p>
                 </article>
 
-              
                 <article class="publication-item">
                     <h3 class="publication-title">Equifinality of Venus-like CO2 atmospheres</h3>
                     <p class="publication-authors"><strong>Constantinou, T.</strong>, Shorttle, O., Nicholls, H.</p>
                     <p class="publication-venue">MNRAS, 2026 <a class="publication-link" href="https://doi.org/10.1093/mnras/stag316" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
-              
                 <article class="publication-item">
-                    <h3 class="publication-title">Comparative Biosignatures with systemic retrievals</h3>
+                    <h3 class="publication-title">Comparative Biosignatures with Systemic Retrievals</h3>
                     <p class="publication-authors"><strong>Constantinou, T.</strong>, Shorttle, O., Cranmer, M., Rimmer, P.B.</p>
-                    <p class="publication-venue">MNRAS, 2026 <a class="publication-link" href="https://doi.org/10.1093/mnras/stag823" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
+                    <p class="publication-venue">MNRAS, 2026 <a class="publication-link" href="https://doi.org/10.1093/mnras/stag823" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
 
                 <article class="publication-item">
                     <h3 class="publication-title">Detecting habitable exoplanet atmospheres with LIFE, the Large Interferometer for Exoplanets</h3>
                     <p class="publication-authors">Rugheimer, S., Weatherbee, A., Fecanin, J., Glasse, A., Rimmer, P.B., Alei, E., ..., <strong>Constantinou, T.</strong>, et al.</p>
-                    <p class="publication-venue">White paper submitted to the UK Space Agency's initiative ``UK Space Frontiers 2035", 2026 <a class="publication-link" href="https://arxiv.org/abs/2607.21683" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
+                    <p class="publication-venue">White paper submitted to the UK Space Agency’s “UK Space Frontiers 2035” initiative, 2026 <a class="publication-link" href="https://arxiv.org/abs/2607.21683" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
-              
 
                 <article class="publication-item">
-                    <h3 class="publication-title">First Detection of Deuterium in Venus's Extended Exosphere</h3>
+                    <h3 class="publication-title">First detection of deuterium in Venus’s extended exosphere</h3>
                     <p class="publication-authors">Weichbold, F., Lammer, H., Scherf, M., Schmid, D., Simon-Wedlund, C., Volwerk, M., Mazelle, C., Stenberg Wieser, G., <strong>Constantinou, T.</strong>, et al.</p>
                     <p class="publication-venue">Nature Communications, preprint <a class="publication-link" href="https://www.researchsquare.com/article/rs-7720153/v1" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
@@ -110,7 +152,7 @@
                 </article>
 
                 <article class="publication-item">
-                    <h3 class="publication-title">Powerful Lightning On Venus Constrained By Atmospheric NO</h3>
+                    <h3 class="publication-title">Powerful lightning on Venus constrained by atmospheric NO</h3>
                     <p class="publication-authors"><strong>Constantinou, T.</strong>, Shorttle, O., Rimmer, P.B.</p>
                     <p class="publication-venue">Planetary Science Journal, 2025 <a class="publication-link" href="https://doi.org/10.3847/PSJ/ae0e0c" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
@@ -137,18 +179,18 @@
                     <h3 class="publication-title">A dry Venusian interior constrained by atmospheric chemistry</h3>
                     <p class="publication-authors"><strong>Constantinou, T.</strong>, Shorttle, O., Rimmer, P.B.</p>
                     <p class="publication-venue">Nature Astronomy, 2024 <a class="publication-link" href="https://www.nature.com/articles/s41550-024-02414-5" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
-                    <p class="publication-note">Read about it in <a href="https://www.theguardian.com/science/2024/dec/02/venus-life-water-atmosphere-analysis-science-research">the Guardian</a>, or hear me talk about it on <a href="https://www.bbc.co.uk/sounds/play/w3ct5vdt?fbclid=IwY2xjawMBPktleHRuA2FlbQIxMQABHhgDjsD1bGxbu4hL1WSXi9Eja48hOYo2kpsVcMAM0anry001Nh2q36T17V2j_aem_9uD3jCS5E5erqkTQa5GXcg">BBC World Service</a> Science In Action (among >750 pieces of media coverage worldwide).</p>
+                    <p class="publication-note">Read about it in <a href="https://www.theguardian.com/science/2024/dec/02/venus-life-water-atmosphere-analysis-science-research">the Guardian</a>, or hear me talk about it on <a href="https://www.bbc.co.uk/sounds/play/w3ct5vdt?fbclid=IwY2xjawMBPktleHRuA2FlbQIxMQABHhgDjsD1bGxbu4hL1WSXi9Eja48hOYo2kpsVcMAM0anry001Nh2q36T17V2j_aem_9uD3jCS5E5erqkTQa5GXcg">BBC World Service</a> Science In Action (among more than 750 pieces of media coverage worldwide).</p>
                     <p class="publication-note"><a href="https://www.ast.cam.ac.uk/current-students/postgraduate/your-phd/murdin-prize">Murdin Prize for best PhD publication</a>.</p>
                 </article>
 
                 <article class="publication-item">
-                    <h3 class="publication-title">Large Interferometer For Exoplanets (LIFE). XIV. Finding terrestrial protoplanets in the galactic neighborhood</h3>
+                    <h3 class="publication-title">Large Interferometer for Exoplanets (LIFE). XIV. Finding terrestrial protoplanets in the galactic neighbourhood</h3>
                     <p class="publication-authors">Cesario, L., Lichtenberg, T., Alei, E., Carrión-González, Ó., ... <strong>Constantinou, T.</strong>, ... the LIFE Collaboration</p>
                     <p class="publication-venue">Astronomy &amp; Astrophysics, 2024 <a class="publication-link" href="https://www.aanda.org/articles/aa/full_html/2024/12/aa50764-24/aa50764-24.html" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
 
                 <article class="publication-item">
-                    <h3 class="publication-title">Hydroxide Salts in the Clouds of Venus: Their Effect on the Sulfur Cycle and Cloud Droplet pH</h3>
+                    <h3 class="publication-title">Hydroxide salts in the clouds of Venus: Their effect on the sulfur cycle and cloud droplet pH</h3>
                     <p class="publication-authors">Rimmer, P.B., Jordan, S., <strong>Constantinou, T.</strong>, Woitke, P., Shorttle, O., Hobbs, R., Paschodimas, A.</p>
                     <p class="publication-venue">The Planetary Science Journal, 2021 <a class="publication-link" href="https://iopscience.iop.org/article/10.3847/PSJ/ac0156" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
@@ -159,7 +201,7 @@
                     <p class="publication-venue">The Astrophysical Journal, 2021 <a class="publication-link" href="https://iopscience.iop.org/article/10.3847/1538-4357/ac1d46" target="_blank" rel="noopener noreferrer" aria-label="Open publication link"><svg class="publication-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 6"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 18"></path><path d="M8 16l8-8"></path></svg></a></p>
                 </article>
 
-                <p class="publications-footer">For a complete list of preprints, conference abstracts and research briefings see my <a href="https://scholar.google.com/citations?user=pLtFIXAAAAAJ&amp;hl=en">Google scholar</a> and CV above.</p>
+                <p class="publications-footer">For a complete list of preprints, conference abstracts, and research briefings, see my <a href="https://scholar.google.com/citations?user=pLtFIXAAAAAJ&amp;hl=en">Google Scholar</a> and CV above.</p>
                 </div>
             </div>
 
@@ -175,22 +217,20 @@
                 <li><span class="talk-role">Invited talk.</span> "Was Venus Ever Habitable?" <span class="talk-meta">VeRaDo Kick-off Meeting, Graz, Austria, November 2024.</span></li>
                 <li><span class="talk-role">Invited poster.</span> "Comparative Biosignatures"; co-organiser of breakout session. <span class="talk-meta">Origins Federation, Cambridge, UK, September 2024.</span></li>
                 <li><span class="talk-role">Organised.</span> LCLU Annual Science Day. <span class="talk-meta">Cambridge, UK, March 2024.</span></li>
-                <li><span class="talk-role">Invited seminar.</span> "Link Between Geochemistry and Atmospheres." <span class="talk-meta">LCLU Coffee Meetings, Cambridge, UK, January 2024.</span></li>
+                <li><span class="talk-role">Invited seminar.</span> "Links between geochemistry and atmospheres." <span class="talk-meta">LCLU Coffee Meetings, Cambridge, UK, January 2024.</span></li>
                 <li><span class="talk-role">Talk.</span> "Was Venus Ever Habitable?" <span class="talk-meta">Rocky Worlds III, Zurich, Switzerland, January 2024.</span></li>
                 <li><span class="talk-role">Talk.</span> "Was Venus Ever Habitable?" <span class="talk-meta">IoA Wednesday Seminar, Cambridge, UK, October 2023.</span></li>
                 <li><span class="talk-role">Invited poster.</span> "Was Venus Ever Habitable?" <span class="talk-meta">Life in the Universe II, Boston, US, September 2023.</span></li>
                 <li><span class="talk-role">Talk.</span> "Was Venus Ever Habitable?" <span class="talk-meta">UKEXOM 2023, London, UK, August 2023.</span></li>
                 <li><span class="talk-role">Talk.</span> "Was Venus Ever Habitable?" <span class="talk-meta">LCLU Science Day, Cambridge, UK, March 2023.</span></li>
-                <li><span class="talk-role">Invited talk.</span> "Venus as Candidate for Constraining Volcanism and Surface Conditions." <span class="talk-meta">RAS Specialist Discussion Meeting: Abiotic baselines in astrobiology, London, UK, January 2023.</span></li>
+                <li><span class="talk-role">Invited talk.</span> "Venus as a candidate for constraining volcanism and surface conditions." <span class="talk-meta">RAS Specialist Discussion Meeting: Abiotic baselines in astrobiology, London, UK, January 2023.</span></li>
             </ol>
         </div>
 
         <!-- Acknowledgements Section -->
         <div class="text-section">
             <h2>Acknowledgements</h2>
-            <p>PostDoc---</p>
-            <p><a href="https://www.su.se/english/divisions/bolin-centre-for-climate-research">Bolin Centre for Climate Research</a>: We are a multi-disciplinary consortium of over 500 scientists that conduct research related to the Earth's climate.</p>   
-            <p>PhD-------</p>
+            <p>My current research is part of the <a href="https://www.su.se/english/divisions/bolin-centre-for-climate-research">Bolin Centre for Climate Research</a>, a multidisciplinary consortium of scientists studying Earth’s climate.</p>
             <p><a href="https://www.shorttle.com/">Planetary Chemistry</a>: We study the evolution and habitability of planets in the solar system and around other stars.</p>
             <p><a href="https://people.phy.cam.ac.uk/pbr27/index.html">Planetary Astrochemistry Lab</a>: We experimentally simulate planetary environments and use them to test prebiotic chemistry.</p>
             <p><a href="https://www.lclu.cam.ac.uk/">Leverhulme Centre for Life in the Universe</a>: We aim to develop a deeper understanding of life, its emergence, and its distribution in the Universe.</p>
@@ -200,8 +240,7 @@
         <div class="text-section">
             <h2>Supplementary: Non-research</h2>
             <p>
-              I favour the micro-adventure: cycling day-trips, weekends away scrambling with friends, bouldering, waking early for a long walk toward a coffee and a pastry..<br> <br>
-              <br> <br>
+              I favour the micro-adventure: cycling day trips, weekends away scrambling with friends, bouldering, or waking early for a long walk in search of coffee and a pastry. Also the macro- when I can: prior to starting my postdoc, I spent 6 months bikepacking Europe, China, and Vietnam. 
             </p>
           <div class="image-gallery">
                  <div class="gallery-item">
@@ -210,11 +249,11 @@
                 </div>
                 <div class="gallery-item">
                     <img src="Figures/bikepacking.png" alt="Bikepacking around the Cairngorms">
-                    <div class="caption">Figure 2. Bikepacking round the Cairngorms</div>
+                    <div class="caption">Figure 2. Bikepacking around the Cairngorms</div>
                 </div>
                 <div class="gallery-item">
                     <img src="Figures/gliding.png" alt="Gliding over Cambridgeshire">
-                    <div class="caption">Figure 3. Gliding over Cambridgeshire<br>(also see CUGC expedition <a href="https://www.cugc.org.uk/gallery/exp-2025-denbigh-sutton-bank/">here</a>)</div>
+                    <div class="caption">Figure 3. Gliding over Cambridgeshire<br>(see also the <a href="https://www.cugc.org.uk/gallery/exp-2025-denbigh-sutton-bank/">CUGC expedition</a>)</div>
                 </div>
                 <div class="gallery-item">
                     <img src="Figures/kayaking.png" alt="Kayaking in Antarctica">
@@ -228,3 +267,4 @@
 
 </body>
 </html>
+
