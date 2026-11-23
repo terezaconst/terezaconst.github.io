@@ -74,6 +74,22 @@ a:hover { color: var(--accent-blue-hover); }
 .talks-list li { break-inside: avoid; margin-bottom: 0.8em; line-height: 1.58; }
 .talk-role { font-weight: 600; }
 .talk-meta { color: #595a66; }
+.ack-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.65em;
+    margin: 0.9em 0 0.45em;
+    font: 0.7em Helvetica, sans-serif;
+    color: #999;
+}
+
+.ack-heading::after {
+    content: "";
+    width: 65px;
+    height: 1px;
+    background: var(--frame-lilac-soft);
+    transform: translateY(-3px);
+}
 @media (max-width: 768px) { .content-flex, .two-column-layout { flex-direction: column; align-items: stretch; gap: 1.35em; } .profile-sidebar { align-items: flex-start; flex-basis: auto; } .abstract { max-width: none; } .image-gallery { grid-template-columns: 1fr; } .container { padding: 1.2em 0.7em 2.2em; } .main-content { padding: 1.4em 1.2em; } .header h1 { font-size: 2em; } .publication-item { margin-bottom: 0.8em; } .talks-list { columns: 1; } }
     </style>
 
@@ -95,7 +111,7 @@ a:hover { color: var(--accent-blue-hover); }
                      <a href="https://orcid.org/0000-0002-2129-1340">ORCID</a><br>
                      <a href="https://www.linkedin.com/in/terezaconst/">LinkedIn</a><br>
                      <a href="mailto:tc496@cam.ac.uk">Email</a><br>
-                     <a href="Academic_CV_Oct2025.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>
+                     <a href="CV_November2026.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>
                 </div>
             </div>
             <div class="abstract">
@@ -228,13 +244,17 @@ a:hover { color: var(--accent-blue-hover); }
         </div>
 
         <!-- Acknowledgements Section -->
-        <div class="text-section">
-            <h2>Acknowledgements</h2>
-            <p>My current research is part of the <a href="https://www.su.se/english/divisions/bolin-centre-for-climate-research">Bolin Centre for Climate Research</a>, a multidisciplinary consortium of scientists studying Earth’s climate.</p>
-            <p><a href="https://www.shorttle.com/">Planetary Chemistry</a>: We study the evolution and habitability of planets in the solar system and around other stars.</p>
-            <p><a href="https://people.phy.cam.ac.uk/pbr27/index.html">Planetary Astrochemistry Lab</a>: We experimentally simulate planetary environments and use them to test prebiotic chemistry.</p>
-            <p><a href="https://www.lclu.cam.ac.uk/">Leverhulme Centre for Life in the Universe</a>: We aim to develop a deeper understanding of life, its emergence, and its distribution in the Universe.</p>
-        </div>
+<!-- Acknowledgements Section -->
+            <div class="text-section">
+                <h2>Acknowledgements</h2>
+                <div class="ack-heading"><span>Postdoc</span></div>
+                <p><a href="https://www.su.se/english/divisions/bolin-centre-for-climate-research">Bolin Centre for Climate Research</a>: A multi-disciplinary consortium of scientists conducting research related to the Earth's climate.</p>
+                <p><a href="https://www.su.se/english/">ABECb</a>: Research on biogeochemistry and environmental change.</p>
+                <div class="ack-heading"><span>PhD</span></div>
+                <p class="ack-phd"><a href="https://www.shorttle.com/">Planetary Chemistry</a>: We study the evolution and habitability of planets in the solar system and around other stars.</p>
+                <p><a href="https://people.phy.cam.ac.uk/pbr27/index.html">Planetary Astrochemistry Lab</a>: We experimentally simulate planetary environments and use them to test prebiotic chemistry.</p>
+                <p><a href="https://www.lclu.cam.ac.uk/">Leverhulme Centre for Life in the Universe</a>: We aim to develop a deeper understanding of life, its emergence, and its distribution in the Universe.</p>
+            </div>
 
       <!-- Supplementary Section -->
         <div class="text-section">
